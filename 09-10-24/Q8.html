@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <style>
+      body {
+        background: radial-gradient(circle, #f3d0ce, #fa2010);
+        font-family: Arial, sans-serif;
+        /* background-color: #ec5f5f; */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        width: 320px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: rgb(236, 234, 234);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      textarea {
+        height: 80px;
+        resize: none;
+      }
+
+      .rating-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+
+      .rating-container label {
+        margin-left: 5px;
+        font-size: 14px;
+      }
+
+      .rating-container input {
+        margin-right: 5px;
+      }
+
+      .checkbox-container {
+        margin-bottom: 15px;
+        align-items: center;
+      }
+
+      .checkbox-container input {
+        margin-left: 0px;
+      }
+
+      button {
+        width: 30%;
+        margin-left: 35%;
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form>
+      <label for="feedback-type">Feedback Type</label>
+      <select name="feedback-type" id="feedback-type" required>
+        <option value="general">General</option>
+        <option value="bug-report">Bug Report</option>
+        <option value="suggestion">Suggestion</option>
+      </select>
+
+      <label for="message">Your Message</label>
+      <textarea name="message" id="message" required></textarea>
+
+      <label>Website Rating</label>
+      <div class="rating-container">
+        <input type="radio" name="rating" id="rating1" value="1" required />
+        <label for="rating1">Excellent</label>
+        <input type="radio" name="rating" id="rating2" value="2" required />
+        <label for="rating2">Good</label>
+        <input type="radio" name="rating" id="rating3" value="3" required />
+        <label for="rating3">Average</label>
+        <input type="radio" name="rating" id="rating4" value="4" required />
+        <label for="rating4">Poor</label>
+      </div>
+
+      <label for="age">Your Age</label>
+      <input type="number" name="age" id="age" min="10" max="100" />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="8"
+        required
+      />
+
+      <label for="website">Website (Optional)</label>
+      <input type="url" name="website" id="website" />
+
+      <div class="checkbox-container">
+        <input type="checkbox" name="terms" id="terms" required />
+        <span class="checkbox-label">I agree to the terms and conditions</span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

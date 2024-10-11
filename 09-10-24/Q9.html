@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .circle {
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 250px;
+        height: 180px;
+      }
+      .card {
+        width: 250px;
+        border: 1px solid black;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+        border-color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      img {
+        border-radius: 50%;
+        width: 250px;
+        height: 180px;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rating-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rating-container input {
+        display: none;
+      }
+      .rating-container .star {
+        font-size: 34px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1 style="font-family: Arial, Helvetica, sans-serif">Title</h1>
+      <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+        Panda card
+      </h3>
+      <div class="card">
+        <div class="circle">
+          <img
+            src="https://t4.ftcdn.net/jpg/05/54/52/13/360_F_554521329_ngmDQSjSrUSRnbK2xK0bkcprsinG9Xdv.jpg"
+            alt="pandaPic"
+          />
+        </div>
+        <p
+          style="
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+          "
+        >
+          John Doe
+        </p>
+        <p style="font-family: Arial, Helvetica">Computer Science 1</p>
+        <p style="font-family: Arial, Helvetica">Computer Science 2</p>
+        <p style="font-family: Arial, Helvetica">Year: 3</p>
+        <div class="rating-container">
+          <input type="radio" name="rating" id="star5" value="5" />
+          <label for="star5" class="star">&#9734;</label>
+          <input type="radio" name="rating" id="star4" value="4" />
+          <label for="star4" class="star">&#9734;</label>
+          <input type="radio" name="rating" id="star3" value="3" />
+          <label for="star3" class="star">&#9734;</label>
+          <input type="radio" name="rating" id="star2" value="2" />
+          <label for="star2" class="star">&#9734;</label>
+          <input type="radio" name="rating" id="star1" value="1" />
+          <label for="star1" class="star">&#9734;</label>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
