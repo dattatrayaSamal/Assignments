@@ -16,7 +16,7 @@
       }
       h1 {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
       form {
         width: 320px;
@@ -27,7 +27,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 8px;
       }
       label {
         font-size: 14px;
@@ -84,10 +84,8 @@
           <option value="bug-report">Bug Report</option>
           <option value="suggestion">Suggestion</option>
         </select>
-
         <label for="message">Your Message</label>
         <textarea name="message" id="message" required></textarea>
-
         <label>Website Rating</label>
         <div class="rating-container">
           <div>
@@ -107,13 +105,10 @@
             <label for="rating4">Poor</label>
           </div>
         </div>
-
         <label for="age">Your Age</label>
         <input type="number" name="age" id="age" min="10" max="100" />
-
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required />
-
         <label for="password">Password</label>
         <input
           type="password"
@@ -122,7 +117,6 @@
           minlength="8"
           required
         />
-
         <label for="website">Website (Optional)</label>
         <input type="url" name="website" id="website" />
 
@@ -132,7 +126,6 @@
             >I agree to the terms and conditions</label
           >
         </div>
-
         <button type="submit">Submit</button>
       </form>
     </div>
