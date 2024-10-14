@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .container > div:nth-child(1) {
+        border: 1px solid black;
+        background-color: aqua;
+        width: 200px;
+        height: 150px;
+      }
+      .container > div:nth-child(2) {
+        border: 1px solid black;
+        background-color: aqua;
+        width: 200px;
+        height: 150px;
+      }
+      .container > div {
+        border: 1px solid black;
+        background-color: aqua;
+        width: 200px;
+        height: 150px;
+        transition: all 0.3s ease;
+      }
+      .container > div:nth-child(3):hover {
+        width: 400px;
+        height: 300px;
+        background-color: lightcoral;
+      }
+      .container > div:nth-child(4) {
+        border: 1px solid black;
+        background-color: aqua;
+        width: 200px;
+        height: 150px;
+      }
+      .container > div:nth-child(5) {
+        border: 1px solid black;
+        background-color: aqua;
+        width: 200px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
