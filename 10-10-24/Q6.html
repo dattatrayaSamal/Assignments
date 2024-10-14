@@ -4,6 +4,256 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MI Store</title>
+    <style>
+      .navbar {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .left,
+      .right {
+        display: flex;
+        gap: 35px;
+      }
+      .right p {
+        margin: 0;
+      }
+      .left > img {
+        width: 35px;
+        height: 45px;
+        border-radius: 12px;
+      }
+      .right > img {
+        width: 20px;
+      }
+      .main-Container {
+        justify-content: center;
+        display: flex;
+        padding: 20px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 185px;
+        height: 200px;
+        border: 2px solid rgb(245, 242, 242);
+        padding: 20px;
+        margin: 8px;
+      }
+      .details {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Bold, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .price {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+        /* gap: 5px; */
+      }
+      .price p:nth-child(1) {
+        font-size: 20px;
+      }
+      .price p:nth-child(2) {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .discount {
+        color: orangered;
+        font-size: 10px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border: 2px solid orangered;
+        border-radius: 5px;
+        padding: 5px;
+        width: 40px;
+        text-align: center;
+      }
+      .product-image > img {
+        width: 100px;
+        height: 150px;
+        margin-top: 80px;
+        margin-left: -80px;
+      }
+      .middleImage > img {
+        width: 72%;
+        height: 95px;
+        margin-left: 188px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="navbar">
+      <div class="left">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX/ZwD/////agj/bAz/YwD/XAD/jVP/WQD/7+n/18r/59z/XQD/YgD/z7z/gTz/nW3/qYL/+vf/eTP/cyX/28r/fzj/x6//1sL/w6j/kV7/tpT/vqD/zbb/eCj/ik3/hUP/9vD/onf/4tX/gUb/kVv/r47/l2X/iFJZAzq+AAAC90lEQVR4nO3da1PiMBiG4cSmlrUF5FjO6u6q//8fLl0+7NCmCCwdfN657xm/FclFixnRpM5XLZaJs1byMf9rc/uvjcvDvcfTQSF35UG4yu49lq4K2boSbswC92XlXnjvQXRaSLxb5PceRaelG7e0+EPmX2Ho7E0Tx23vPYDOs34GEVoIoX4I9UOoH0L9EOqHUD+E+iHUD6F+CPVDqB9C/RDqh1A/hPoh1A+hfgj1Q6gfQv0Q6odQP4T6IdQPoX4I9UOoH0L9EDYLN+rqZ+taGHaP/9/uZTZxefr1+uripfnYolth3ve3qjdd7b5AFqvI4+aXLXq9VJj1biasel0n6YlnS39EHvN02crsOwv3zV37ZWdD6EdvrUM2IvS+bPsBaUboe0n8SrUj9KNxlGhI6P0sRjQlHCWR96IpoX+KTOS2hH7RnPuNCf2gcZ1aE/5sDN2a0D/WT6I5YVl/J5oTevPn0L/Vpv1vIxx9js/r1+/3cnRCuKnNid9G2M/O/nSmSIu39sugVxv89xFe9LlCUW2i1lLtjSgq3H+Tjzbh+JgoK3R5G/HTitBli7hwaUbo8teo8ON4ulAWFs9R4dCO0DnzwnRqXVi8WxeGpXnhVlt4xp/9HpSFwU2a1V8FZWGYxX5Dqr8MysL4bD5CiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiFBQmG8iz/l8PK6wiw1+WlvkG10XNDv+d/DokoVFt3sMuWI2qNfYtaOYNI4ZDJr7XjSPaewcUYwbx0Q30DjRTfb6OueYyK4X1x3T+V5fciHUD6F+CPVDqB9C/RDqh1A/hPoh1A+hfgj1Q6gfQv0Q6odQP4T6IdQPoX4I9UOoH0L9EOqHUD+E+iHUD6F+CPVDqB9C/RDql5g3bt3y0uVuWhVDN7/mlmI6pX3nneWTGBLvfHnZymGtsule6NeZ1bMYqjtJVnfpKx9Si8aQJtUN+g73IdwMJw/W2g4PK+v/AJnmXpMjHP8SAAAAAElFTkSuQmCC"
+          alt=""
+        />
+        <p>Store</p>
+        <p>Phone</p>
+        <p>TV & Smart Home</p>
+        <p>Tablet</p>
+        <p>LifeStyle</p>
+      </div>
+      <div class="right">
+        <p>Discover</p>
+        <p>Support</p>
+        <img src="https://www.svgrepo.com/show/7109/search.svg" alt="search" />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1124/1124199.png"
+          alt="cart"
+        />
+        <img
+          src="https://www.svgrepo.com/show/456992/account.svg"
+          alt="account"
+        />
+      </div>
+    </div>
+    <div class="main-Container">
+      <div class="container">
+        <div class="details">
+          <p>Redmi Earphones</p>
+          <div class="discount">25% off</div>
+          <div class="price">
+            <p>₹599</p>
+            <p>₹449</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQhh1e8MJJ--GhyXKNg5KHopQUSFrJMcx8ZK48NjizBaHaxVrAjIhMLKeun1HrSE-sTnp7LwWIz9ynb85WGF-Bn_NA4xJ9ivNUNls9iauIKIsfyTOZO9rxnZQ&usqp=CAE"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="details">
+          <p>Mi In-ear Earphones</p>
+          <div class="discount">20% off</div>
+          <div class="price">
+            <p>₹999</p>
+            <p>₹799</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSFz-qe2r8p7kSIDqY51ExLuIXu4XZtijpaHoE0dGHcmhO06wCKr-BTufAjUg0R5TpKRKZ7HuRQ0dRKvShKg6HWSVx7YwKZJjfvVFtc6CzPJyKpVtTOD9wsmg&usqp=CAE"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="details">
+          <p>Redmi Wireless Earphones</p>
+          <div class="discount">56% off</div>
+          <div class="price">
+            <p>₹2999</p>
+            <p>₹1299</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRuSwNLUAoikJmHURS2YwSE_kiM4f8IaFNjxUIov2wPvXixeckZ8DjUQivW3J3KZ00ep0jfSb3Rp3EN8QEf1OCorX_TDdvwgw&usqp=CAE"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="details">
+          <p>Mi Blutooth speaker</p>
+          <div class="discount">28% off</div>
+          <div class="price">
+            <p>₹3499</p>
+            <p>₹2499</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR4nrybKRJq2G0VYB54MGSHabzi_axB1EF-aFhSXGJdoIPzxpdBslZZny2cji1OSL6-tV9vWxwGuxH7WcI6_8m2gVHOmoQFXtzxi9xWPQvW6XLeeqcNWMSLwA&usqp=CAE"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="middleImage">
+      <img
+        src="https://i03.appmifile.com/667_operator_in/16/09/2024/3dc7a525e383e22e78361ca189422c8d.jpg?thumb=1&w=1680&f=webp&q=85"
+        alt=""
+      />
+    </div>
+    <div class="main-Container">
+      <div class="container">
+        <div class="details">
+          <p>Xiaomi 120W Adapter</p>
+          <div class="discount">50% off</div>
+          <div class="price">
+            <p>₹5999</p>
+            <p>₹2999</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSDcu-5gDfgR4lfW7yodnMxysE1Tos-TFMIbU4TlM17wqm0oIJKLBh2xDX3obS8Dw2_92PWEp2LsB54vNp87xJvsrfyp37ezsUFcEkmOOxToUHM5JvVX9PgTw&usqp=CAE"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="details">
+          <p>Mi 2A Fast Charger</p>
+          <div class="discount">25% off</div>
+          <div class="price">
+            <p>₹599</p>
+            <p>₹499</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRs963gI2WSOBxmIdzjoMKDQOGsjEbUTzthoixPcCvjF2d7GENsNlWv80QYRt2cXJKSpLZD7hgZzK2e27kiZINFHRxHdajiAB-6cwa1Ss7vylX97x11RTspBDY&usqp=CAE"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="details">
+          <p>Xiaomi sonic charger</p>
+          <div class="discount">64% off</div>
+          <div class="price">
+            <p>₹699</p>
+            <p>₹249</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSFDzgXwX1eiVv1wXcyrPw-ONzX-2WGsE0hwHBQdf86GI-MF3h3RFCShXjyMusAz-6c04VMXhreV9E14R6GZdAWv8NLOW_ZxlMn824wquOih4SXjktZ_I_AgA&usqp=CAE"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="details">
+          <p>Mi 18W Dual Port Charger</p>
+          <div class="discount">35% off</div>
+          <div class="price">
+            <p>₹1397</p>
+            <p>₹899</p>
+          </div>
+        </div>
+        <div class="product-image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR6TGAnXLUGfJEvKwxnZDVb3L5JKiMfVqUUYazZJOV1Ivma42Ao2iDSgjdbSTsSfOPTz1lX0iFJX233Zd76ZQ075dhzzwgeOwU_JI8Ovkhv3ZjLTkkm8gkg&usqp=CAE"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

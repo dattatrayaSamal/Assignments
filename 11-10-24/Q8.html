@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai</title>
+    <style>
+      .application {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+        font-weight: bold;
+        display: flex;
+        background-color: rgb(238, 185, 194);
+        border: none;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+      }
+      .application span + button {
+        display: flex;
+      }
+      .applynow {
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(212, 41, 41);
+        color: white;
+        width: 100px;
+        height: 35px;
+      }
+      .navbar {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left > img {
+        width: 100px;
+      }
+      .middle {
+        display: flex;
+        gap: 15px;
+      }
+      .middle p:nth-child(5) {
+        color: rgb(230, 73, 73);
+      }
+      .right {
+        display: flex;
+        gap: 5px;
+      }
+      .btn1 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: rgb(71, 143, 224);
+        background-color: rgb(175, 231, 248);
+        border: none;
+        width: 115px;
+        height: 35px;
+        border-radius: 7px;
+      }
+      .btn2 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: rgb(230, 73, 73);
+        background-color: white;
+        width: 75px;
+        height: 35px;
+        border-radius: 7px;
+        border: 1px solid rgb(233, 65, 65);
+      }
+      .main-Container {
+        justify-content: space-between;
+        display: flex;
+      }
+      .container {
+        padding: 20px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+      }
+      .container p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 5px;
+      }
+      .container p:nth-of-type(-n + 2) {
+        font-weight: bold;
+        font-size: 50px;
+        color: rgb(96, 64, 238);
+      }
+      .container p:nth-child(3) {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .container > button {
+        margin-top: 10px;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(212, 41, 41);
+        color: white;
+        width: 100px;
+        height: 40px;
+      }
+      .container2 {
+        display: flex;
+        align-items: center;
+      }
+      .container2 > iframe {
+        display: flex;
+      }
+      .footer {
+        margin-top: 40px;
+        display: flex;
+        height: 100px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid black;
+        background-color: rgb(48, 126, 199);
+        align-items: center;
+      }
+      .footer p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        align-items: center;
+        margin: 7px;
+      }
+      .footer p:nth-child(1) {
+        font-size: xx-large;
+        font-weight: bold;
+      }
+      .footer p:nth-child(2) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="application">
+      <span>
+        Applications for our 6th November Batches are now open!
+        <button class="applynow">APPLY NOW</button>
+      </span>
+    </div>
+    <div class="navbar">
+      <div class="left">
+        <img
+          src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp"
+          alt=""
+        />
+      </div>
+      <div class="middle">
+        <p>COURCES</p>
+        <p>FEES</p>
+        <p>EVENTS</p>
+        <p>LEARN</p>
+        <p>SUCCESS STORIES</p>
+        <p>HIRE FROM US</p>
+      </div>
+      <div class="right">
+        <button class="btn1">REFER & EARN</button>
+        <button class="btn2">SIGN UP</button>
+      </div>
+    </div>
+    <div class="main-Container">
+      <div class="container">
+        <p>Proof that dreams do</p>
+        <p>come true</p>
+        <p>A testament to what's possible</p>
+        <button>APPLY NOW</button>
+      </div>
+      <div class="container2">
+        <iframe
+          width="550"
+          height="300"
+          src="https://www.youtube.com/embed/0867JeIfyLY"
+          title="YouTube video player"
+          frameborder=""
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="footer">
+      <p>How is Masai Creating an Impact</p>
+      <p>4000 students placed across 1000+ companies</p>
+    </div>
+  </body>
+</html>

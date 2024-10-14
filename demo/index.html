@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MI Store</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .left,
+      .right {
+        display: flex;
+        gap: 35px;
+      }
+      .right p {
+        margin: 0;
+      }
+      .left > img {
+        width: 35px;
+        height: 45px;
+        border-radius: 12px;
+      }
+      .right > img {
+        width: 20px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        height: 250px;
+        border: 2px solid black;
+        padding: 20px;
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .price {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .price p:nth-child(1) {
+        font-size: 20px;
+      }
+      .price p:nth-child(2) {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .discount {
+        color: orangered;
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid orangered;
+        border-radius: 5px;
+        padding: 5px;
+        width: 60px;
+        text-align: center;
+      }
+      .product-image img {
+        width: 100px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX/ZwD/////agj/bAz/YwD/XAD/jVP/WQD/7+n/18r/59z/XQD/YgD/z7z/gTz/nW3/qYL/+vf/eTP/cyX/28r/fzj/x6//1sL/w6j/kV7/tpT/vqD/zbb/eCj/ik3/hUP/9vD/onf/4tX/gUb/kVv/r47/l2X/iFJZAzq+AAAC90lEQVR4nO3da1PiMBiG4cSmlrUF5FjO6u6q//8fLl0+7NCmCCwdfN657xm/FclFixnRpM5XLZaJs1byMf9rc/uvjcvDvcfTQSF35UG4yu49lq4K2boSbswC92XlXnjvQXRaSLxb5PceRaelG7e0+EPmX2Ho7E0Tx23vPYDOs34GEVoIoX4I9UOoH0L9EOqHUD+E+iHUD6F+CPVDqB9C/RDqh1A/hPoh1A+hfgj1Q6gfQv0Q6odQP4T6IdQPoX4I9UOoH0L9EDYLN+rqZ+taGHaP/9/uZTZxefr1+uripfnYolth3ve3qjdd7b5AFqvI4+aXLXq9VJj1biasel0n6YlnS39EHvN02crsOwv3zV37ZWdD6EdvrUM2IvS+bPsBaUboe0n8SrUj9KNxlGhI6P0sRjQlHCWR96IpoX+KTOS2hH7RnPuNCf2gcZ1aE/5sDN2a0D/WT6I5YVl/J5oTevPn0L/Vpv1vIxx9js/r1+/3cnRCuKnNid9G2M/O/nSmSIu39sugVxv89xFe9LlCUW2i1lLtjSgq3H+Tjzbh+JgoK3R5G/HTitBli7hwaUbo8teo8ON4ulAWFs9R4dCO0DnzwnRqXVi8WxeGpXnhVlt4xp/9HpSFwU2a1V8FZWGYxX5Dqr8MysL4bD5CiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiFBQmG8iz/l8PK6wiw1+WlvkG10XNDv+d/DokoVFt3sMuWI2qNfYtaOYNI4ZDJr7XjSPaewcUYwbx0Q30DjRTfb6OueYyK4X1x3T+V5fciHUD6F+CPVDqB9C/RDqh1A/hPoh1A+hfgj1Q6gfQv0Q6odQP4T6IdQPoX4I9UOoH0L9EOqHUD+E+iHUD6F+CPVDqB9C/RDql5g3bt3y0uVuWhVDN7/mlmI6pX3nneWTGBLvfHnZymGtsule6NeZ1bMYqjtJVnfpKx9Si8aQJtUN+g73IdwMJw/W2g4PK+v/AJnmXpMjHP8SAAAAAElFTkSuQmCC"
+          alt=""
+        />
+        <p>Store</p>
+        <p>Phone</p>
+        <p>TV & Smart Home</p>
+        <p>Tablet</p>
+        <p>LifeStyle</p>
+      </div>
+      <div class="right">
+        <p>Discover</p>
+        <p>Support</p>
+        <img src="https://www.svgrepo.com/show/7109/search.svg" alt="search" />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1124/1124199.png"
+          alt="cart"
+        />
+        <img
+          src="https://www.svgrepo.com/show/456992/account.svg"
+          alt="account"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="details">
+        <p>Redmi 13C</p>
+        <div class="discount">39% off</div>
+        <div class="price">
+          <p>$2599</p>
+          <p>$1999</p>
+        </div>
+      </div>
+      <div class="product-image">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
