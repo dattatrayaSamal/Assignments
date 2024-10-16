@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        background: linear-gradient(135deg, #5f6fff, #242423);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid black;
+      }
+      .left {
+        font-size: 15px;
+        color: white;
+        margin: 20px;
+      }
+      .middle {
+        font-size: 15px;
+        justify-content: center;
+        color: white;
+        display: flex;
+        gap: 20px;
+      }
+
+      .middle > div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .right {
+        display: flex;
+        gap: 10px;
+      }
+
+      .btn2 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: white;
+        background-color: rgb(110, 181, 240);
+        width: 75px;
+        height: 35px;
+        border-radius: 7px;
+        border: none;
+        margin-right: 20px;
+      }
+      .new {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 10px;
+        color: black;
+        background-color: rgb(233, 221, 152);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <p>Newton School</p>
+      </div>
+      <div class="middle">
+        <p>Data Science & AI</p>
+        <p>B.Tech in CS & AI</p>
+        <div class="new">NEW</div>
+        <p>Newton Edge</p>
+        <p>Refer & Earn</p>
+        <div>
+          <p>More</p>
+          <img
+            width="17px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxCoai2wJM1RdCngIGAlyC_Pq_8JSbRVjLFHxLoNLlfzXoukllu_zQnL-ZwPZCICQZA4&usqp=CAU"
+            alt="downArrow"
+          />
+        </div>
+        <div class="right">
+          <button class="btn2">Sign up</button>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
